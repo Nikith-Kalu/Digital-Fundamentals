@@ -16,5 +16,5 @@ for r=1:le
 
 end
 
-
-imshow(rgb)
+figure(1)
+imshow(Xo)

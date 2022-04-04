@@ -17,4 +17,4 @@ for r=1:le
 end
 
 figure(1)
-imshow(Xo)
+imshow()
