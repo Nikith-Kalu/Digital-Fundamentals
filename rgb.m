@@ -6,9 +6,9 @@ imout = imin;
 % Determine 
 switch colourchangeto
     case 'r'
-        red = 255;
-        green = 0;
-        blue = 0;
+        red = 250;
+        green = 35;
+        blue = 53;
     case 'g'
         red = 0;
         green = 255;
