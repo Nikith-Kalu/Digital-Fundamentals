@@ -36,7 +36,7 @@ for k = 1:len
                     imout(k,l,3)=blue;
                 end
             case 'g'
-                if (imin(k,l,1) < 140) && (imin(k,l,2) > 140) && (imin(k,l,3) < 140)
+                if (imin(k,l,1) < 140) && (imin(k,l,2) > 1) && (imin(k,l,3) < 127)
                     imout(k,l,1)=red;
                     imout(k,l,2)=green;
                     imout(k,l,3)=blue;
