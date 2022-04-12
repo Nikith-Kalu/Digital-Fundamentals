@@ -19,11 +19,15 @@ redPixels = redChannel == 255 & greenChannel  == 0 & blueChannel  == 0;
 bluePixels = redChannel == 0 & greenChannel  == 0 & blueChannel  == 255;
 % Find pixels that are green
 greenPixels = redChannel == 0 & greenChannel  == 255 & blueChannel  == 0;
+% Find pixels that are black
+blackPixels = redChannel == 0 & greenChannel  == 0 & blueChannel  == 0;
 
 %switch case statement 
 switch x
     case 'a' %changes colour to red
-       
+       redChannel(blackPixels) = 255;
+       greenChannel(blackPixels) = 0;
+       blueChannel(blackPixels) = 0;
    case 'b' %changes colour to green
        newX = rgb(X, 'g', 'k');
    case 'c' %changes colour to blue
