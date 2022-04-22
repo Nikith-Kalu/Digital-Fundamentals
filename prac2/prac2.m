@@ -25,3 +25,5 @@ figure(1), imshow(X)
 figure(2), imshow(newX)
 
 
+
+
