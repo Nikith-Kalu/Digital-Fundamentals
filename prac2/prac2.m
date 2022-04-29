@@ -11,12 +11,14 @@ x = input('enter selection:', 's'); %asks user for value
 %
 %uses the switch case statement to call rgb function
 switch x
-   case 'a' %changes colour to red
+    case 'a' %changes colour to red 
        newX = rgb(X, 'r', 'k');
-   case 'b' %changes colour to green
+    case 'b' %changes colour to green 
        newX = rgb(X, 'g', 'k');
-   case 'c' %changes colour to blue
+    case 'c' %changes colour to blue 
        newX = rgb(X, 'b', 'k');
+    case 'y' %changes colour to yellow
+       newX = rgb(X, 'y', 'k');
    otherwise %if incorrect option is chosen displays error message
        error('Incorrect menu option selected')
 end
