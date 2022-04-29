@@ -57,6 +57,12 @@ for k = 1:len
                     imout(k,l,2)=green;
                     imout(k,l,3)=blue;
                 end
+            case 'o'
+                if (imin(k,l,1) > 69) && (imin(k,l,2) > 69) && (imin(k,l,3) < 69)
+                    imout(k,l,1)=red;
+                    imout(k,l,2)=green;
+                    imout(k,l,3)=blue;
+                end
             
             otherwise
                 error('Incorrect Parameters')
