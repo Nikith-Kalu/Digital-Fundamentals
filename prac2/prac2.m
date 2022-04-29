@@ -26,9 +26,12 @@ switch x
    otherwise %if incorrect option is chosen displays error message
        error('Incorrect menu option selected')
 end
+
 %displays the original image and the changed colour image.
-figure(1), imshow(X)
-figure(2), imshow(newX)
+figure('Name','Old', 'NumberTitle','off'), imshow(X)
+title 'Original Image'
+figure('Name', 'New', 'NumberTitle','off'), imshow(newX)
+title 'Modified Image'
 
 
 
