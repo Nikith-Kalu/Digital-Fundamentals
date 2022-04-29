@@ -63,7 +63,7 @@ for k = 1:len
                     imout(k,l,3)=blue;
                 end
             case 'o'
-                if (imin(k,l,1) > 220) && (imin(k,l,2) > 35) && (imin(k,l,2) < 130) && (imin(k,l,3) < 55)
+                if (imin(k,l,1) > 220) && (imin(k,l,2) < ) && (imin(k,l,3) < 55)
                     imout(k,l,1)=red;
                     imout(k,l,2)=green;
                     imout(k,l,3)=blue;
