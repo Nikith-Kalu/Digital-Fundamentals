@@ -7,6 +7,7 @@ disp('Select colour to change')
 disp('a. Red')
 disp('b. Green')
 disp('c. Blue')
+disp('d. Yellow')
 x = input('enter selection:', 's'); %asks user for value
 %
 %uses the switch case statement to call rgb function
