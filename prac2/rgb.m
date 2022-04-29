@@ -52,7 +52,7 @@ for k = 1:len
                     imout(k,l,3)=blue;
                 end
             case 'y'
-                if (imin(k,l,1) > 110) && (imin(k,l,2) > 69) && (imin(k,l,3) < 120)
+                if (imin(k,l,1) > 135) && (imin(k,l,2) > 135) && (imin(k,l,3) < 69)
                     imout(k,l,1)=red;
                     imout(k,l,2)=green;
                     imout(k,l,3)=blue;
