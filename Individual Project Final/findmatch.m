@@ -7,7 +7,9 @@ for x = 2:N-1
         
         if data(x) == data(y)
             bmatch = 1;
+            
+            break;
         end
     end
 end
-end 
+end
