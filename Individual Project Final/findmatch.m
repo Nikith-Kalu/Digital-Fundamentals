@@ -1,10 +1,13 @@
 function bmatch = findmatch(data)
 bmatch = 0;
+N = length(data);
 
-for i = 2:length(data) - 1
-    for k = i + 1:length(data)
-        if data(k) ==  data(i)
+for x = 2:N-1
+    for y = x + 1:N
+        
+        if data(x) == data(y)
             bmatch = 1;
         end
     end
 end
+end 
