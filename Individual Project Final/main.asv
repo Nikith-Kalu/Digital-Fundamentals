@@ -1,8 +1,0 @@
-clc, clear
-samples = 100;
-people = 365;
-i = zeros(samples, people);
-for Nx = 1:people
-    for Ny = 1:samples
-        a = dategen(k);
-        i(Ny, Nx) = findmatch

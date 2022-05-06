@@ -1,11 +1,11 @@
-function bmatch = findmatch(data)
+function bmatch = findmatch(a)
 bmatch = 0;
-N = length(data);
+N = length(a);
 
 for x = 2:N-1
     for y = x + 1:N
         
-        if data(x) == data(y)
+        if a(x) == a(y)
             bmatch = 1;
             
             break;
