@@ -1,22 +1,8 @@
 clc, clear
-range = [1,365];
-rend = 500;
-ppl = 30;
-bdays = randi(range, ppl, rend)
-rpt = 0;
-for r = 1:rend
-    flag = false;
-    for b1 = 1:ppl
-        for b2 = b1+1:ppl
-            if bday(b1,r) == bdays(b2,r)
-                rpt = rpt + 1;
-                flag = true;
-                break
-            end
-        end
-        if flag == true
-            break
-        end
-    end
-end
-p = rpt/rend
+samples = 100;
+people = 365;
+i = zeros(samples, people);
+for Nx = 1:people
+    for Ny = 1:samples
+        a = dategen(k);
+        i(Ny, Nx) = findmatch

@@ -1,24 +1,18 @@
 clc, clear
-range = [1,365];
-rend = 500;
-ppl = 30;
-bdays = randi(range, ppl, rend);
-rpt = 0;
-for r = 1:rend
-    flag = false;
-    for b1 = 1:ppl
-        for b2 = b1+1:ppl
-            if bdays(b1,r) == bdays(b2,r)
-                rpt = rpt + 1;
-                flag = true;
-                break
-            end
-        end
-        if flag == true
-            break
-        end
+samples = 100;
+people = 365;
+i = zeros(samples, people);
+for Nx = 1:people
+    for Ny = 1:samples
+        a = randi(365,1,k);
+        i(Ny, Nx) = findmatch(a);
     end
 end
-p = rpt/rend;
+m = mean(i,1);
+y = m(2:people);
+x = 1:1:364;
 
-plot(rpt, p)
+figure(1)
+
+y2 = 1-exp(-(x.^2)/730);
+plot(x,y,x,y2)
